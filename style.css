@@ -22,6 +22,16 @@ body {
   justify-content: center;
 }
 
+footer {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  height: 100px;
+  text-align: center;
+  font-size: small;
+}
+
 /* LAYOUT */
 main {
   position: relative;
