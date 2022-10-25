@@ -17,10 +17,9 @@
   },
   "homepage": "https://github.com/AparnaChougale/Pig-Game#readme",
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.7.0",
+    "@parcel/transformer-image": "^2.7.0",
     "parcel": "^2.7.0"
   },
-  "dependencies": {
-    "@parcel/resolver-glob": "^2.7.0",
-    "@parcel/transformer-image": "^2.7.0"
-  }
+  "dependencies": {}
 }
