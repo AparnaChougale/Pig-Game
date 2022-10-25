@@ -3,11 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aparna Chougale" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
     <title>Pig Game</title>
   </head>
   <body>
+    <div>
+      <h1 class="game-rules-title">🎲 Game Rules</h1>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>📜 Game Rules</h1>
+        <div class="game-rules">
+          <p>
+            On a turn, a player rolls the die 🎲 repeatedly. The goal is to
+            accumulate as many points as possible, adding up (hold) the numbers
+            rolled on the die 🎲. However, if a player rolls a <span>1</span>,
+            the player's turn is over and any points they have accumulated
+            during this turn are forfeited. Rolling a <span>1</span> doesn't
+            wipe out your entire score from previous turns, just the total
+            earned during that particular roll. A player has to choose to hold
+            (stop rolling the die 🎲) if they do not want to take a chance of
+            rolling a <span>1</span> and losing all of their points from this
+            turn. If the player chooses to hold, all of the points rolled during
+            that turn are added to his or her score. When a player reaches a
+            total of <span>100</span> points, the game ends and that player is
+            the winner.
+          </p>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
@@ -36,6 +63,5 @@
         &copy; 2022 - Developed by Aparna Chougale while learning JavaScript.
       </footer>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>

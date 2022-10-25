@@ -1,4 +1,5 @@
 'use strict';
+import images from 'url:./images/*.png';
 
 const score1El = document.querySelector('#score--0');
 const score2El = document.getElementById('score--1');
@@ -10,6 +11,10 @@ const current0El = document.getElementById('current--0');
 const current1El = document.getElementById('current--1');
 const palyer0El = document.querySelector('.player--0');
 const palyer1El = document.querySelector('.player--1');
+const gameRules = document.querySelector('.game-rules-title');
+const overlay = document.querySelector('.overlay');
+const modal = document.querySelector('.modal');
+const btnCloseModal = document.querySelector('.close-modal');
 
 let score, currentScore, activePlayer, playing;
 
@@ -20,7 +25,6 @@ const init = function () {
   activePlayer = 0;
   playing = true;
 
-  score1El.textContent = 0;
   score1El.textContent = 0;
   score2El.textContent = 0;
   current0El.textContent = 0;
@@ -36,7 +40,7 @@ const init = function () {
 // setting initial conditions
 init();
 
-// Swiching player
+// Switching player
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   currentScore = 0;
@@ -53,7 +57,10 @@ btnRoll.addEventListener('click', function () {
 
     // 2. Display dice
     //document.querySelector('img').src = `dice-${dice}.png`;
-    diceEl.src = `/images/dice-${dice}.png`;
+    // diceEl.src = `/images/dice-${dice}.png`;
+
+    diceEl.src = images[`dice-${dice}`];
+
     diceEl.classList.remove('hidden');
 
     // 3. Check for rolled 1
@@ -94,3 +101,24 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
+
+// Game Rules
+
+// const showModal = function () {
+//   //console.log('Btn clicked!');
+//   modal.classList.remove('hidden');
+//   overlay.classList.remove('hidden');
+// };
+
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+gameRules.addEventListener('click', function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+});
+
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
