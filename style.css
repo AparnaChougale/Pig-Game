@@ -189,9 +189,7 @@ main {
 .game-rules-title {
   position: absolute;
   top: 5%;
-  left: 43%;
-  /* text-align: center; */
-
+  left: 40%;
   color: #050606;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -205,6 +203,28 @@ main {
   font-weight: 800;
   color: rgb(73, 73, 73);
   /* background-color: #e4d5d9; */
+}
+
+.game-rules p {
+  line-height: 1.6em;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  text-align: justify;
+}
+
+.game-rules p span {
+  color: #c7365f;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  vertical-align: center;
+  line-height: 0;
+}
+
+.game-rules div {
+  color: #c7365f;
+  font-size: 5rem;
+  vertical-align: center;
+  line-height: 0;
 }
 
 .close-modal {
@@ -240,28 +260,4 @@ main {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
-}
-
-.game-rules p {
-  /* padding: 1rem 3rem; */
-  /* letter-spacing: 1px; */
-  line-height: 1.6em;
-  font-size: 1.8rem;
-  margin-top: 3rem;
-  text-align: justify;
-}
-
-.game-rules p span {
-  color: #c7365f;
-  font-weight: bolder;
-  font-size: 1.6rem;
-  vertical-align: center;
-  line-height: 0;
-}
-
-.game-rules div {
-  color: #c7365f;
-  font-size: 5rem;
-  vertical-align: center;
-  line-height: 0;
 }
