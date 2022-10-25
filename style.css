@@ -154,6 +154,18 @@ main {
   top: 46.1rem;
 }
 
+.btn--rules {
+  top: 3.2rem;
+  left: 90%;
+}
+
+.btn:hover {
+  font-weight: bold;
+  color: #444;
+
+  /* transform: scale(1.07); */
+}
+
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -188,14 +200,14 @@ main {
 
 .game-rules-title {
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 40%;
   color: #050606;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
   margin-bottom: 1rem;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 300;
 }
 

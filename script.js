@@ -11,7 +11,7 @@ const current0El = document.getElementById('current--0');
 const current1El = document.getElementById('current--1');
 const palyer0El = document.querySelector('.player--0');
 const palyer1El = document.querySelector('.player--1');
-const gameRules = document.querySelector('.game-rules-title');
+const btnGameRules = document.querySelector('.btn--rules');
 const overlay = document.querySelector('.overlay');
 const modal = document.querySelector('.modal');
 const btnCloseModal = document.querySelector('.close-modal');
@@ -115,7 +115,7 @@ const closeModal = function () {
   overlay.classList.add('hidden');
 };
 
-gameRules.addEventListener('click', function () {
+btnGameRules.addEventListener('click', function () {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 });
